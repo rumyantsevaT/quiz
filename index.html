@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="quiz">
+      <div class="quiz__content">
+        <div class="quiz-head">
+          <a href="/" class="quiz-head__logo">
+            <img src="./img/logo.png" alt="logo-quiz" />
+          </a>
+          <strong class="quiz-head__hint"
+            >Пройдите тест-опрос и выберите подарок</strong
+          >
+        </div>
+        <div class="quiz-body">
+          <form action="#" class="form quiz-body__form" method="post">
+            <fieldset class="form__fieldset" style="display: block">
+              <div class="form__title">Какой сайт вас интересует?</div>
+              <div class="form__wrap">
+                <label
+                  for="label-choise-yes__first"
+                  class="form__label-radio active-radio"
+                >
+                  <input
+                    type="radio"
+                    id="label-choise__first"
+                    class="form__radio"
+                    name="choise-first"
+                    value="Сайт-визитка"
+                  />
+                  <div class="form__choise">
+                    <div class="form__image">
+                      <img src="./img/remont-1.jpeg" alt="remont-1.jpeg" />
+                    </div>
+                    <div class="form__answer">Сайт-визитка</div>
+                  </div>
+                </label>
+                <label for="label-choise-no__first" class="form__label-radio">
+                  <input
+                    type="radio"
+                    id="label-choise__second"
+                    class="form__radio"
+                    name="choise-first"
+                    value="Landing page"
+                  />
+                  <div class="form__choise">
+                    <div class="form__image">
+                      <img src="./img/neremont-1.jpeg" alt="neremont-1.jpeg" />
+                    </div>
+                    <div class="form__answer">Landing page</div>
+                  </div>
+                </label>
+                <label for="label-choise-yes__first" class="form__label-radio">
+                  <input
+                    type="radio"
+                    id="label-choise__thirth"
+                    class="form__radio"
+                    name="choise-first"
+                    value="Да"
+                  />
+                  <div class="form__choise">
+                    <div class="form__image">
+                      <img src="./img/remont-1.jpeg" alt="remont-1.jpeg" />
+                    </div>
+                    <div class="form__answer">Интернет магазин</div>
+                  </div>
+                </label>
+                <label for="label-choise-no__first" class="form__label-radio">
+                  <input
+                    type="radio"
+                    id="label-choise__fourth"
+                    class="form__radio"
+                    name="choise-first"
+                    value="Нет"
+                  />
+                  <div class="form__choise">
+                    <div class="form__image">
+                      <img src="./img/neremont-1.jpeg" alt="neremont-1.jpeg" />
+                    </div>
+                    <div class="form__answer">Пока не знаю</div>
+                  </div>
+                </label>
+              </div>
+              <div class="form-button form-button__indent">
+                <button class="button form-button__btn-next button--primary">
+                  Далее
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset" style="display: none"></fieldset>
+            <fieldset class="form__fieldset" style="display: none"></fieldset>
+            <fieldset class="form__fieldset" style="display: none"></fieldset>
+            <fieldset class="form__fieldset" style="display: none"></fieldset>
+          </form>
+        </div>
+        <div class="quiz-position"></div>
+      </div>
+    </div>
+  </body>
+</html>
