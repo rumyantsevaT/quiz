@@ -148,7 +148,7 @@ button {
   margin-bottom: 30px;
 }
 .form__label-radio {
-  margin-right: 42px;
+  margin: 0 40px 40px 0;
   cursor: pointer;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -191,7 +191,7 @@ button {
   align-self: center;
 }
 .form-button__btn-next {
-  min-width: 171px;
+  max-width: 171px;
   display: block;
   margin-right: 375px;
   text-align: left;
@@ -201,9 +201,28 @@ button {
 .form-button__btn-next::after {
   content: "";
   position: absolute;
-  top:19px;
+  top: 19px;
   right: 30px;
   background: url(../img/next.svg) no-repeat;
   width: 35px;
   height: 8px;
+}
+
+.form__fieldset:nth-child(1) .form-button__btn-next {
+  margin-left: auto;
+}
+
+.quiz-position {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 316px;
+  width: 100%;
+  min-height: 100%;
+}
+.quiz-position__bg {
+  background: url ('../img/quiz-bg.jpg') no-repeat;
+  width: 100%;
+  height: 682px;
+  background-size: cover;
 }
