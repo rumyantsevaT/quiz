@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="pass-test pass-test__content">
+      <button class="button pass-test__button button--primary">
+        Пройти тест
+      </button>
+    </div>
+
+    <div class="overlay"></div>
+
     <div class="quiz">
       <div class="quiz__content">
         <div class="quiz-head">
@@ -100,15 +108,21 @@
             <fieldset class="form__fieldset" style="display: none"></fieldset>
           </form>
         </div>
-        <div class="quiz-position">
-          <div class="quiz-position__bg">
-            <span class="quiz-position_on">Тест пройден на</span>
-            <div class="quiz-position__percent">
-              <span id="quiz-position__percent-change">25</span> %
-            </div>
+      </div>
+
+      <div class="quiz-position">
+        <div class="quiz-position__bg">
+          <span class="quiz-position__on">Тест пройден на</span>
+          <div class="quiz-position__percent">
+            <span id="quiz-position__percent-change">25</span> %
           </div>
+          <span class="quiz-position__find-out">
+            Узнайте, какая скидка ждет вас в конце теста!
+          </span>
+          <div class="quiz-position__image"></div>
         </div>
       </div>
     </div>
+    
   </body>
 </html>

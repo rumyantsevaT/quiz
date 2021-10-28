@@ -79,6 +79,7 @@ img {
 button {
   cursor: pointer;
 }
+/* Кнопка вызывающая модалку */
 .pass-test {
   display: flex;
   align-items: center;
@@ -103,17 +104,41 @@ button {
   background: linear-gradient(180deg, #f492b2 0%, #f65d77 100%);
 }
 .pass-test__button {
-  max-width: 300px;
+  max-width: 270px;
 }
-.quiz {
-  /* border: 4px solid #999; */
-  background: #fff;
-  max-width: 1300px;
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   width: 100%;
-  margin: 0 auto;
-  height: 70vh;
-  max-height: 890px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 30;
 }
+
+.quiz {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: #fff;
+  max-width: 1311px;
+  width: 100%;
+  height: 682px;
+  max-height: 95%;
+  z-index: 40;
+  overflow: auto;
+}
+
 .quiz-head {
   padding: 41px 0 34px 43px;
   display: flex;
@@ -162,7 +187,7 @@ button {
   margin-right: 0;
 }
 .form__label-radio.active-radio {
-  box-shadow: 0 6px 23px rgba(246,93,119, 0.25);
+  box-shadow: 0 6px 23px rgba(246, 93, 119, 0.25);
 }
 .form__radio {
   display: none;
@@ -184,8 +209,8 @@ button {
   align-items: center;
   justify-content: center;
 }
-.form-button__indent{
-  margin-top: 50px;
+.form-button__indent {
+  margin-top: 20px;
   margin-left: auto;
   display: flex;
   align-self: center;
@@ -193,7 +218,7 @@ button {
 .form-button__btn-next {
   max-width: 171px;
   display: block;
-  margin-right: 375px;
+  /* margin-right: 375px; */
   text-align: left;
   padding-left: 35px;
   position: relative;
@@ -212,17 +237,51 @@ button {
   margin-left: auto;
 }
 
+/* Cайдбар картинка */
+
 .quiz-position {
   position: absolute;
   top: 0;
   right: 0;
-  min-width: 316px;
-  width: 100%;
+  width: 316px;
+  /* width: 100%; */
   min-height: 100%;
 }
 .quiz-position__bg {
-  background: url ('../img/quiz-bg.jpg') no-repeat;
+  background: url("../img/quiz-bg.jpg") no-repeat;
   width: 100%;
   height: 682px;
   background-size: cover;
+}
+.quiz-position__on {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #595354;
+  padding: 67px 0 20px;
+  display: block;
+}
+.quiz-position__percent {
+  font-weight: bold;
+  font-size: 73px;
+  line-height: 99px;
+  text-align: center;
+  color: #f492b2;
+  margin-bottom: 85px;
+}
+.quiz-position__find-out {
+  display: block;
+  font-family: Nautilus Pompilius;
+  font-size: 29px;
+  line-height: 121%;
+  text-align: center;
+  color: #595354;
+  margin: 0 auto 70px;
+  min-width: 210px;
+  padding: 0 47px;
+}
+.quiz-position__image {
+  background:url("../img/box.png") no-repeat;
+  max-width: 286px;
+  height: 188px;
 }
